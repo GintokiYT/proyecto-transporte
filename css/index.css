@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #0167A7;
+  color: #fff;
+}
+
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-custom img {
+  display: block;
+  width: 60px;
+  border-radius: 50%;
+}
+.navbar-custom .nav-item a {
+  color: #fff;
+  font-size: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+}
+.navbar-custom .dropdown-menu {
+  background-color: #0167A7;
+}
+.navbar-custom .dropdown-menu a {
+  color: #fff;
+  cursor: pointer;
+}
+.navbar-custom .dropdown-menu a:hover {
+  background-color: unset;
+  font-weight: 900;
+}
+
+.main .principal {
+  text-align: center;
+}
+.main .titulo {
+  font-size: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  font-weight: 900;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.main .formulario label {
+  font-size: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+}
+.main .formulario button {
+  width: 100%;
+  display: block;
+}
+
+.mensaje {
+  background-color: red;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  -webkit-animation: desvanecer 3s ease;
+          animation: desvanecer 3s ease;
+}
+
+.resultado {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #b9b9b9;
+  padding: 1rem;
+}
+.resultado p {
+  text-align: left;
+}
+
+@-webkit-keyframes desvanecer {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes desvanecer {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}/*# sourceMappingURL=index.css.map */
